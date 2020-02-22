@@ -1,0 +1,30 @@
+{
+  "name": "hapi-multipart-demo",
+  "version": "0.0.0",
+  "description": "Multipart form/file upload demo with hapi.js v18",
+  "main": "server.js",
+  "scripts": {
+    "setup": "[ -d uploads ] || mkdir uploads",
+    "test": "semistandard && node server.js && curl --form file=@helloWorld.txt food=chocolate http://localhost:8080/submit",
+    "server": "node server.js"
+  },
+  "keywords": [
+    "multipart",
+    "upload",
+    "hapijs",
+    "demo"
+  ],
+  "author": "Roxxy Rafael",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "18.4.x"
+  },
+  "devDependencies": {
+    "semistandard": "*"
+  },
+  "semistandard": {
+    "ignore": [
+      "node_modules/"
+    ]
+  }
+}
