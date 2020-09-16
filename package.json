@@ -17,7 +17,8 @@
   "author": "Roxxy Rafael",
   "license": "MIT",
   "dependencies": {
-    "@hapi/hapi": "18.4.x"
+    "@hapi/hapi": "18.4.x",
+    "mime": "2.4.x"
   },
   "devDependencies": {
     "semistandard": "*"
